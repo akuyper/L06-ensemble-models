@@ -9,7 +9,7 @@ library(stacks)
 tidymodels_prefer()
 
 # Seed
-set.seed(2021)
+set.seed(13579)
 
 # load required objects ----
 load("model_info/wildfires_recipe.rda")
@@ -23,10 +23,10 @@ knn_model <- nearest_neighbor(
   set_engine("kknn")
 
 # # check tuning parameters
-# parameters(knn_model)
+# hardhat::extract_parameter_set_dials(knn_model)
 
 # set-up tuning grid ----
-knn_params <- parameters(knn_model) %>%
+knn_params <- hardhat::extract_parameter_set_dials(knn_model) %>%
   update(neighbors = neighbors(range = c(1,40)))
 
 # define grid

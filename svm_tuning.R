@@ -21,10 +21,10 @@ svm_model <- svm_rbf(
   set_engine("kernlab")
 
 # # check tuning parameters
-# parameters(svm_model)
+# hardhat::extract_parameter_set_dials(svm_model)
 
 # set-up tuning grid ----
-svm_params <- parameters(svm_model)
+svm_params <- hardhat::extract_parameter_set_dials(svm_model)
 
 # define grid
 svm_grid <- grid_regular(svm_params, levels = 5)

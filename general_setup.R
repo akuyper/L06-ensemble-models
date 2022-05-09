@@ -1,4 +1,4 @@
-# Load package(s)
+# Load package(s) ----
 library(tidymodels)
 library(tidyverse)
 
@@ -23,11 +23,9 @@ wildfires_dat <- read_csv("data/wildfires.csv") %>%
 
 
 
-
-
 # check missingness & look for extreme issues
-naniar::miss_var_summary(wildfires_dat)
-skimr::skim_without_charts(wildfires_dat)
+
+
 
 # Initial split & folding ----
 wildfires_split <- wildfires_dat %>%

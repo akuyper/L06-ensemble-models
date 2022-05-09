@@ -1,6 +1,6 @@
 ## Overview
 
-The main goal of this lab is to introduce and build an ensemble using `{stacks}`. Reading and reviewing `{stacks}`'s [homepage](https://stacks.tidymodels.org/index.html)= and the [Getting Started With stacks vignette](https://stacks.tidymodels.org/articles/basics.html)=. The latter of which will be very helpful since we will be following the general workflow that is outlined in it.
+The main goal of this lab is to introduce and build an ensemble using `{stacks}`. Reading and reviewing `{stacks}`'s [homepage](https://stacks.tidymodels.org/index.html) and the [Getting Started With stacks vignette](https://stacks.tidymodels.org/articles/basics.html). The latter of which will be very helpful since we will be following the general workflow that is outlined in it.
 
 ## Instructions
 

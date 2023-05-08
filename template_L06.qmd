@@ -2,23 +2,33 @@
 title: "L06 Ensemble Models"
 subtitle: "Data Science 3 with R (STAT 301-3)"
 author: "YOUR NAME"
-output: 
-  html_document:
+
+format:
+  html:
     toc: true
-    toc_float: true
-    highlight: "tango"
+    embed-resources: true
+    code-fold: show
+    link-external-newwindow: true
+    
+execute:
+  warning: false
+
+from: markdown+emoji 
 ---
 
-<!-- Set global options for R code chunks -->
-```{r global-settings, include=FALSE}
-knitr::opts_chunk$set(
-  warning = FALSE, message = FALSE
-)
-```
+::: {.callout-tip icon=false}
+
+## Github Repo Link
+
+To link to your github **repo**sitory, appropriately edit the example link below. Meaning replace `https://your-github-repo-url` with your github repo url. Suggest verifying the link works before submitting.
+
+[https://your-github-repo-url](https://your-github-repo-url)
+
+:::
 
 ## Overview
 
-The main goal of this lab is to introduce and build an ensemble using `{stacks}`. Reading and reviewing `{stacks}`'s [homepage](https://stacks.tidymodels.org/index.html){target="_blank"} and the [Getting Started with stacks vignette](https://stacks.tidymodels.org/articles/basics.html){target="_blank"}. The latter of which will be very helpful since we will be following the general workflow that is outlined in it.
+The main goal of this lab is to introduce and build an ensemble model using `{stacks}`. Reading and reviewing `{stacks}`'s [homepage](https://stacks.tidymodels.org/index.html) and the [Getting Started with stacks vignette](https://stacks.tidymodels.org/articles/basics.html). The latter of which will be very helpful since we will be following the general workflow that is outlined in it.
 
 ## Dataset
 
@@ -51,11 +61,8 @@ There is one essential argument to add to `tune_grid()` or `fit_resamples()`. St
 The `ensemble_model.R` script gets the students started, but most of the code used to train and assess the ensemble model is left blank. There are headings to help guide students through this process. The [Getting Started with stacks vignette](https://stacks.tidymodels.org/articles/basics.html){target="_blank"} will be especially useful for this portion of the lab.
 
 ## What should be turned in
+## What should be turned in
 
-Include a short description/exploration of the ensemble model. How many total models were considered? How many were ultimately included in the ensemble model and their weights? Assess the performance of the ensemble model on the test set. Compare the ensemble models performance to its member models. 
+An short report/executive summary/memo outlining the results with a link at the top to the associated GitHub repo. 
 
-Graphs, tables, and a short paragraph(s) will be useful for this. 
-
-## Github Repo Link
-
-[YOUR GITHUB URL](YOUR GITHUB URL){target="_blank"}
+The short report should include a brief description/exploration of the ensemble model. How many total models were considered? How many were ultimately included in the ensemble model and their weights? Assess the performance of the ensemble model on the test set. Compare the ensemble models performance to its member models. Graphs and tables (expected to be nicely formatted) will be useful for this. 
